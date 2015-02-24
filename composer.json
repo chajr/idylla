@@ -1,0 +1,20 @@
+{
+  "name": "chajr/idylla",
+  "type": "application",
+  "license": "MIT",
+  "description": "Module based application container.",
+  "keywords": [],
+  "homepage": "https://github.com/chajr/idylla",
+  "version": "0.0.0",
+  "authors": [
+    {
+      "name": "Michał Adamiak",
+      "email": "chajr@bluetree.pl",
+      "homepage": "https://github.com/chajr",
+      "role": "Project Manager"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0"
+  }
+}
