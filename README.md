@@ -9,10 +9,10 @@ Idylla jak i każdy dostępny dla niej moduł dostępne są jako pakiet bibliote
 [Composer](https://getcomposer.org/) i dostępne w serwisie
 [Packagist](https://packagist.org/).
 
-Więcej informacji  oraz dokumentacja na temat projektu znajduje się w [Wiki](https://github.com/chajr/idylla/wiki)
+Więcej informacji  oraz dokumentacja na temat projektu znajduje się w [Wiki](https://github.com/bluetree-service/idylla/wiki)
 
 ***
 
 ### Uruchamianie
-* [Wymagania](https://github.com/chajr/idylla/wiki/Wymagania)
-* [Instalacja](https://github.com/chajr/idylla/wiki/Instalacja)
+* [Wymagania](https://github.com/bluetree-service/idylla/wiki/Wymagania)
+* [Instalacja](https://github.com/bluetree-service/idylla/wiki/Instalacja)
