@@ -1,10 +1,10 @@
 {
-  "name": "chajr/idylla",
+  "name": "bluetree-service/idylla",
   "type": "application",
   "license": "MIT",
   "description": "Module based application container.",
   "keywords": [],
-  "homepage": "https://github.com/chajr/idylla",
+  "homepage": "https://github.com/bluetree-service/idylla",
   "version": "0.0.0",
   "authors": [
     {
