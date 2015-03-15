@@ -1,0 +1,32 @@
+{
+  "name": "bluetree-service/idylla",
+  "type": "application",
+  "license": "MIT",
+  "description": "Module based application container.",
+  "keywords": [],
+  "homepage": "https://github.com/bluetree-service/idylla",
+  "version": "0.0.0",
+  "authors": [
+    {
+      "name": "Michał Adamiak",
+      "email": "chajr@bluetree.pl",
+      "homepage": "https://github.com/chajr",
+      "role": "Project Manager"
+    },
+    {
+      "name": "Beata Wojtaszuk",
+      "email": "beata.wojtaszuk@gmail.com",
+      "homepage": "https://github.com/beatawu",
+      "role": "Developer"
+    },
+    {
+      "name": "Mariusz Maroń",
+      "email": "maronmariusz@gmail.com",
+      "homepage": "https://github.com/MaronMariusz",
+      "role": "Front-end Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0"
+  }
+}
