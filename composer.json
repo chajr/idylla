@@ -18,6 +18,12 @@
       "email": "beata.wojtaszuk@gmail.com",
       "homepage": "https://github.com/beatawu",
       "role": "Developer"
+    },
+    {
+      "name": "Mariusz Maroń",
+      "email": "maronmariusz@gmail.com",
+      "homepage": "https://github.com/MaronMariusz",
+      "role": "Front-end Developer"
     }
   ],
   "require": {
