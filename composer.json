@@ -1,0 +1,66 @@
+{
+  "name": "bluetree-service/idylla",
+  "type": "application",
+  "license": "MIT",
+  "description": "Module based application container.",
+  "keywords": [],
+  "homepage": "https://github.com/bluetree-service/idylla",
+  "version": "0.1.0",
+  "authors": [
+    {
+      "name": "Beata Wojtaszuk",
+      "email": "beata.wojtaszuk@gmail.com",
+      "homepage": "https://github.com/beatawu",
+      "role": "Developer"
+    },
+    {
+      "name": "Mariusz Maroń",
+      "email": "maronmariusz@gmail.com",
+      "homepage": "https://github.com/MaronMariusz",
+      "role": "Front-end Developer"
+    },
+    {
+      "name": "Michał Adamiak",
+      "email": "chajr@bluetree.pl",
+      "homepage": "https://github.com/chajr",
+      "role": "Project Manager"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "symfony/symfony": "2.6.*",
+    "doctrine/orm": "~2.2,>=2.2.3,<2.5",
+    "doctrine/dbal": "<2.5",
+    "doctrine/doctrine-bundle": "~1.2",
+    "twig/extensions": "~1.0",
+    "symfony/assetic-bundle": "~2.3",
+    "symfony/swiftmailer-bundle": "~2.3",
+    "symfony/monolog-bundle": "~2.4",
+    "sensio/distribution-bundle": "~3.0,>=3.0.12",
+    "sensio/framework-extra-bundle": "~3.0,>=3.0.2",
+    "incenteev/composer-parameter-handler": "~2.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "": "src/",
+      "SymfonyStandard": "app/"
+    },
+    "psr-4": {
+      
+    }
+  },
+  "require-dev": {
+    "sensio/generator-bundle": "~2.3"
+  },
+  "config": {
+    "bin-dir": "bin"
+  },
+  "extra": {
+    "symfony-app-dir": "app",
+    "symfony-web-dir": "web",
+    "symfony-assets-install": "relative",
+    "incenteev-parameters": {
+      "file": "app/config/parameters.yml"
+    }
+  }
+}
