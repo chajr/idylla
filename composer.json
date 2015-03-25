@@ -46,7 +46,7 @@
       "SymfonyStandard": "app/"
     },
     "psr-4": {
-      
+      "Lib\\": "lib/"
     }
   },
   "require-dev": {
