@@ -2,3 +2,4 @@ composer.phar
 phpunit.phar
 composer.lock
 vendor
+.tmp_staging
