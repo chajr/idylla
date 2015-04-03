@@ -17,8 +17,6 @@ TMP_STAGING=".tmp_staging"
 if [ ! -x $PHPCS_BIN ]; then
     echo "PHP CodeSniffer bin not found or executable -> $PHPCS_BIN"
     exit 1
-else
-    php $PHPCS_BIN
 fi
 
 # stolen from template file
