@@ -3,3 +3,5 @@ phpunit.phar
 composer.lock
 vendor
 .tmp_staging
+app/bootstrap.php.cache
+web/bundles/*
