@@ -7,7 +7,7 @@ class AppKernel extends Kernel
 {
     /**
      * store basic directory path
-     * 
+     *
      * @var string
      */
     protected static $_basePath;
@@ -31,7 +31,6 @@ class AppKernel extends Kernel
             $bundles[] = new Symfony\Bundle\DebugBundle\DebugBundle();
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
-            $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
         }
 
         return $bundles;
@@ -44,7 +43,7 @@ class AppKernel extends Kernel
 
     /**
      * rewrite base application cache directory
-     * 
+     *
      * @return string
      */
     public function getCacheDir()
@@ -54,7 +53,7 @@ class AppKernel extends Kernel
 
     /**
      * rewrite base application log directory
-     * 
+     *
      * @return string
      */
     public function getLogDir()
@@ -65,10 +64,10 @@ class AppKernel extends Kernel
     /**
      * return basic application directory
      * before check that directory is set and store it in static variable
-     * 
+     *
      * @return string
      */
-    public static function getBasePath ()
+    public static function getBasePath()
     {
         if (!self::$_basePath) {
             self::$_basePath = preg_replace('#app/AppKernel\.php$#', '', __FILE__);
