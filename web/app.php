@@ -3,7 +3,7 @@ use Symfony\Component\ClassLoader\ApcClassLoader;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Debug\Debug;
 
-if (file_exists('../app.lock')) {
+if (file_exists(__DIR__ . '/../app.lock')) {
     header('HTTP/1.0 403 Forbidden');
     exit('Application not available.');
 }
@@ -22,29 +22,30 @@ if (isset($_SERVER['HTTP_CLIENT_IP'])
 $requireAppAutoload = __DIR__ . '/../app/autoload.php';
 $requireAppKernel   = __DIR__ . '/../app/AppKernel.php';
 $requireAppCache    = __DIR__ . '/../app/bootstrap.php.cache';
+$environments       = require_once __DIR__ . '/../app/config/environments.php';
+$environment        = 'prod';
 
-$environment = 'prod';
 if (isset($_SERVER['HTTP_ENVIRONMENT_MOD'])) {
     $environment = $_SERVER['HTTP_ENVIRONMENT_MOD'];
 }
 
 switch ($environment) {
-    case 'dev':
-    case 'debug':
+    case $environments['dev']:
+    case $environments['debug']:
         require_once $requireAppAutoload;
         Debug::enable();
         require_once $requireAppKernel;
-        $kernel = new AppKernel('dev', true);
+        $kernel = new AppKernel($environment, true);
         break;
 
-    case 'pre_prod':
-    case 'prod':
+    case $environments['pre_prod']:
+    case $environments['prod']:
     default:
         $loader     = require_once $requireAppCache;
         $apcLoader  = new ApcClassLoader(sha1(__FILE__), $loader);
         $loader->unregister();
         $apcLoader->register(true);
-        $kernel = new AppKernel('prod', false);
+        $kernel = new AppKernel($environment, false);
         $kernel->loadClassCache();
         break;
 }
