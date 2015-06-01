@@ -25,6 +25,10 @@ $requireAppCache    = __DIR__ . '/../app/bootstrap.php.cache';
 $environments       = require_once __DIR__ . '/../app/config/environments.php';
 $environment        = 'prod';
 
+define('LOCATOR',   __DIR__ . '/..'); 
+define('VAR',   LOCATOR.'/var'); 
+define('CONFIGURE', LOCATOR.'/web'); 
+
 if (isset($_SERVER['HTTP_ENVIRONMENT_MOD'])) {
     $environment = $_SERVER['HTTP_ENVIRONMENT_MOD'];
 }
