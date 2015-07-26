@@ -1,9 +1,14 @@
 <?php
+
 use Symfony\Component\ClassLoader\ApcClassLoader;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Debug\Debug;
 
-if (file_exists(__DIR__ . '/../app.lock')) {
+define('LOCATOR', __DIR__ . '/..');
+define('VAR', LOCATOR . '/var');
+define('CONFIGURE', LOCATOR . '/web');
+
+if (file_exists(LOCATOR . '/app.lock')) {
     header('HTTP/1.0 403 Forbidden');
     exit('Application not available.');
 }
@@ -19,15 +24,11 @@ if (isset($_SERVER['HTTP_CLIENT_IP'])
     exit('You are not allowed to access this file. Check ' . basename(__FILE__) . ' for more information.');
 }
 
-$requireAppAutoload = __DIR__ . '/../app/autoload.php';
-$requireAppKernel   = __DIR__ . '/../app/AppKernel.php';
-$requireAppCache    = __DIR__ . '/../app/bootstrap.php.cache';
-$environments       = require_once __DIR__ . '/../app/config/environments.php';
+$requireAppAutoload = LOCATOR . '/app/autoload.php';
+$requireAppKernel   = LOCATOR . '/app/AppKernel.php';
+$requireAppCache    = LOCATOR . '/app/bootstrap.php.cache';
+$environments       = require_once LOCATOR . '/app/config/environments.php';
 $environment        = 'prod';
-
-define('LOCATOR',   __DIR__ . '/..'); 
-define('VAR',   LOCATOR.'/var'); 
-define('CONFIGURE', LOCATOR.'/web'); 
 
 if (isset($_SERVER['HTTP_ENVIRONMENT_MOD'])) {
     $environment = $_SERVER['HTTP_ENVIRONMENT_MOD'];
