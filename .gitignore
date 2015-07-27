@@ -5,3 +5,4 @@ vendor
 .tmp_staging
 app/bootstrap.php.cache
 web/bundles/*
+app/SymfonyRequirements.php
