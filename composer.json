@@ -5,7 +5,7 @@
   "description": "Module based application container.",
   "keywords": [],
   "homepage": "https://github.com/bluetree-service/idylla",
-  "version": "0.1.0.1",
+  "version": "0.1.0.2",
   "authors": [
     {
       "name": "Beata Wojtaszuk",
@@ -38,7 +38,8 @@
     "symfony/monolog-bundle": "~2.4",
     "sensio/distribution-bundle": "~3.0,>=3.0.12",
     "sensio/framework-extra-bundle": "~3.0,>=3.0.2",
-    "incenteev/composer-parameter-handler": "~2.0"
+    "incenteev/composer-parameter-handler": "~2.0",
+    "chajr/class-event": "0.1.2"
   },
   "autoload": {
     "psr-0": {
